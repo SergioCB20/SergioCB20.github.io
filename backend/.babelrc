@@ -1,3 +1,0 @@
-{
-    "presets": ["@babel/preset-env"] //sirve para que babel detecte lo que tiene que hacer y convertir correctamente su código JS.
-}
