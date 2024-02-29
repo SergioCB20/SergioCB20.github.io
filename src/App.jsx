@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./components/Header/Header";
-import Home from "./pages/Home/Home";
-import Login from "./pages/Login/Login";
-import Signin from "./pages/Signin/Signin";
-import Footer from "./components/Footer/Footer";
-import Shop from "./pages/Shop/Shop";
-import Cart from "./pages/Cart/Cart";
-import PumbaPlus from "./pages/PumbaPlus/PumbaPlus";
-import ThanksPage from "./pages/ThanksCLI/ThanksPage";
-import ProductDetails from "./pages/ProductDetails/ProductDetails";
-import Promotions from "./pages/Promotions/Promotions";
-import { useUserContext } from "./context/UserContext";
-import { useProductosContext } from "./context/ProductosContext";
+import Header from "./components/Header/Header.jsx";
+import Home from "./pages/Home/Home.jsx";
+import Login from "./pages/Login/Login.jsx";
+import Signin from "./pages/Signin/Signin.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+import Shop from "./pages/Shop/Shop.jsx";
+import Cart from "./pages/Cart/Cart.jsx";
+import PumbaPlus from "./pages/PumbaPlus/PumbaPlus,jsx";
+import ThanksPage from "./pages/ThanksCLI/ThanksPage.jsx";
+import ProductDetails from "./pages/ProductDetails/ProductDetails.jsx";
+import Promotions from "./pages/Promotions/Promotions.jsx";
+import { useUserContext } from "./context/UserContext.jsx";
+import { useProductosContext } from "./context/ProductosContext.jsx";
 
 const App = () => {
   const { user, setUser } = useUserContext();
