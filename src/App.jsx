@@ -33,8 +33,10 @@ const App = () => {
 
     function updateUserData() {
       const token = localStorage.getItem("token");
-      const decodedToken = decodeToken(token);
-      setUser(decodedToken.usuario);
+      if(token){
+        const decodedToken = decodeToken(token);
+        setUser(decodedToken.usuario);
+      }
     }
 
     updateUserData();

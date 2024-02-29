@@ -4,7 +4,7 @@ import { useUserContext } from "../../context/UserContext";
 export default function ThanksPage() {
   const {setCart} = useUserContext()
   useEffect(()=>{
-    const token = localStorage.getItem("token");
+    const token = localStorage.getItem("token") || "";
     localStorage.setItem(`cart-${token}`, []);
     setCart([]);
   },[])
